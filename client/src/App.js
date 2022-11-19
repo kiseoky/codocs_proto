@@ -9,7 +9,7 @@ function App() {
   const [content, setContent] = useState('');
   useEffect(() => {
     setLoading(true);
-    socket = io('ws://localhost:3001', {
+    socket = io('ws://localhost:8100', {
       cors: { origin: '*' }
     });
 
